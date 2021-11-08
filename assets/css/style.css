@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #e43c5c;
+  color: rgba(243, 179, 95, 0.9);
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(126, 126, 126, 0.6);
+  background: rgba(68, 68, 68, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .section-bg {
@@ -484,7 +484,10 @@ section {
   color: #fff;
   text-decoration: none;
 }
-
+#about .logo img {
+  max-height: 70px;
+  
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -703,6 +706,9 @@ section {
   opacity: 1;
   bottom: 0;
 }
+#portfolio .logo img {
+  max-height: 70px;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -756,6 +762,17 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+.portfolio .php-email-form button[type=submit] {
+  background: rgba(172, 172, 172, 0.9);
+  border: 0;
+  padding: 100px 28px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.portfolio .php-email-form button[type=submit]:hover {
+  background: rgba(243, 179, 95, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -1101,7 +1118,7 @@ section {
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(243, 179, 95, 0.9);
+  background: rgba(39, 39, 39, 0.9);
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1703,7 +1720,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #d01d3f;
+  background: rgba(73, 73, 73, 0.9);
   color: #fff;
   text-decoration: none;
 }
